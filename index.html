@@ -92,7 +92,8 @@ p{margin:0}
 .hero .lead{margin-top:24px}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .photo{margin:0;border-radius:6px;overflow:hidden;background:var(--tile)}
-.photo-founder{margin:0;border-radius:8px;overflow:hidden;object-fit: contain;}
+.photo-ramming{margin:0;border-radius:6px;overflow:hidden;background:var(--tile);aspect-ratio:4/3; object-fit: contain}
+.photo-founder{margin:0;border-radius:8px;overflow:hidden;object-fit: contain}
 .photo img{width:100%;height:100%;object-fit:cover}
 .hero .photo{aspect-ratio:4/3}
 .place{display:flex;gap:8px;align-items:flex-start;margin-top:28px;color:var(--muted);font-size:15px;line-height:1.5}
@@ -372,7 +373,7 @@ dialog.lb::backdrop{background:rgba(8,12,18,.84)}
       <p>Standard grades and custom shapes for linings, casting and combustion. Tell us your application and we'll recommend a grade.</p>
     </div>
     <div class="cats">
-      <a class="cat" href="#/products/bricks"><span class="photo"><img data-img="fireclay_brick" alt="Bimal fireclay brick" loading="lazy"></span><span><span class="cat-t">Refractory bricks</span><span class="cat-d">Fire clay (IS 6, IS 8), high alumina up to 80%, insulating, acid-resistant and special shapes.</span></span></a>
+      <a class="cat" href="#/products/bricks"><span class="photo"><img data-img="bricks" alt="Bimal fireclay brick" loading="lazy"></span><span><span class="cat-t">Refractory bricks</span><span class="cat-d">Fire clay (IS 6, IS 8), high alumina up to 80%, insulating, acid-resistant and special shapes.</span></span></a>
       <a class="cat" href="#/products/castables"><span class="photo"><img data-img="castables_lineup" alt="Bimal LC 45, LC 60 and LC 80 castable bags" loading="lazy"></span><span><span class="cat-t">Castables</span><span class="cat-d">Conventional, low cement, high alumina, insulating and self-flow castables, up to 94% alumina.</span></span></a>
       <a class="cat" href="#/products/ramming"><span class="photo"><img data-img="induction" alt="Induction furnace lining" loading="lazy"></span><span><span class="cat-t">Ramming and gunning mixes</span><span class="cat-d">Magnesite ramming mass and gunning mixes for induction furnaces and hot repairs.</span></span></a>
       <a class="cat" href="#/products/shapes"><span class="photo"><img data-img="special_shapes" alt="Refractory sleeves" loading="lazy"></span><span><span class="cat-t">Bottom pouring sets and shapes</span><span class="cat-d">Refractory sets for steel casting, and shapes made to your drawing.</span></span></a>
@@ -510,12 +511,12 @@ dialog.lb::backdrop{background:rgba(8,12,18,.84)}
   <section class="pcat" id="products-ramming" aria-labelledby="pr-t">
     <div class="wrap">
       <div class="pcat-head">
-        <div><h2 id="pr-t">Ramming and gunning mixes</h2><p class="lead">Magnesite ramming mass forms a dense, joint-free lining that resists molten metal penetration. Gunning mixes are for hot repairs and lining maintenance.</p></div>
-        <div class="pics one"><figure class="photo"><img data-img="induction" alt="Induction furnace lining" loading="lazy"></figure></div>
+        <div><h2 id="pr-t">Ramming and gunning mixes</h2><p class="lead">Ramming mass forms a dense, joint-free lining that resists molten metal penetration. Gunning mixes are for hot repairs and lining maintenance.</p></div>
+        <div class="pics one"><figure class="photo-ramming"><img data-img="induction" alt="Induction furnace lining" loading="lazy"></figure></div>
       </div>
       <div class="tbl">
         <table class="wide-tbl">
-          <caption>Magnesite-based Bimal ramming and gunning refractories</caption>
+          <caption>Bimal ramming and gunning refractories</caption>
           <thead><tr><th scope="col">Product</th><th scope="col">Bulk density at 110 °C (g/cc)</th><th scope="col">CCS at 110 °C (kg/cm²)</th><th scope="col">Grain size</th><th scope="col">MgO</th><th scope="col">CaO</th><th scope="col">SiO₂</th><th scope="col">Fe₂O₃</th><th scope="col">Best for</th></tr></thead>
           <tbody>
             <tr><th scope="row">Ramming mass BM 85</th><td class="num">2.80–2.95</td><td class="num">180–250</td><td class="num">0–6 mm</td><td class="num">85%</td><td class="num">3%</td><td class="num">5%</td><td class="num">2%</td><td>General-purpose induction furnace and steel melting work</td></tr>
@@ -571,7 +572,7 @@ dialog.lb::backdrop{background:rgba(8,12,18,.84)}
     <div class="wrap">
       <div class="pcat-head">
         <div><h2 id="ps-t">Bottom pouring sets and special shapes</h2><p class="lead">Refractory sets for bottom-poured steel casting, and shapes made to customer specifications.</p></div>
-        <div class="pics"><figure class="photo"><img data-img="bottom_pouring_set" alt="Bimal bottom pouring sleeves" loading="lazy"></figure><figure class="photo"><img data-img="special_shapes" alt="Bimal special refractory shapes" loading="lazy"></figure></div>
+        <div class="pics"><figure class="photo"><img data-img="bottom_pouring_set" alt="Bimal bottom pouring sleeves" loading="lazy"></figure><figure class="photo"><img data-img="bottom_pouring_set2" alt="Bimal special refractory shapes" loading="lazy"></figure></div>
       </div>
       <article class="prod"><div><h3>Bottom pouring sets</h3><p>Refractory assemblies that carry molten steel into ingot moulds.</p></div>
         <dl class="specs"><div><dt>Used in</dt><dd>Steel plants, steel casting and foundries</dd></div></dl>
@@ -909,6 +910,7 @@ dialog.lb::backdrop{background:rgba(8,12,18,.84)}
   "blocks": "images/blocks.png",
   "brick_close": "images/brick_close.png",
   "bricks_stack": "images/bricks_stack.png",
+  "bricks": "images/brick-1.jpeg",
   "bricks_v": "images/bricks_v.png",
   "ceramic": "images/ceramic.png",
   "cert_gst": "images/cert_gst.jpg",
@@ -923,11 +925,12 @@ dialog.lb::backdrop{background:rgba(8,12,18,.84)}
   "fireclay": "images/fireclay.png",
   "fireclay_brick": "images/fireclay_brick.jpg",
   "highalumina_brick": "images/highalumina_brick.jpg",
-  "bottom_pouring_set": "images/bottom_pouring_set.jpg",
-  "special_shapes": "images/special_shapes.jpg",
-  "castables_lineup": "images/castables_lineup.jpg",
+  "bottom_pouring_set": "images/bottom_pouring_set.jpeg",
+  "bottom_pouring_set2": "images/brick-2.jpeg",
+  "special_shapes": "images/special_shape.jpeg",
+  "castables_lineup": "images/castables_lineup.jpeg",
   "castable_material": "images/castable_bag_with_material.jpg",
-  "mortars_lineup": "images/mortars_lineup.jpg",
+  "mortars_lineup": "images/mortars_lineup.jpeg",
   "mortar_material": "images/mortar_bag_with_material.jpg",
   "castable_lc45": "images/castable_lc45.jpg",
   "castable_lc60": "images/castable_lc60.jpg",
@@ -938,7 +941,7 @@ dialog.lb::backdrop{background:rgba(8,12,18,.84)}
   "granules": "images/granules.jpeg",
   "ha_bricks": "images/ha_bricks.png",
   "hero": "images/hero.png",
-  "induction": "images/induction.png",
+  "induction": "images/induction.jpeg",
   "lab": "images/lab.png",
   "lab_bottles": "images/lab_bottles.png",
   "lab_equip": "images/lab_equip.png",
@@ -954,7 +957,7 @@ dialog.lb::backdrop{background:rgba(8,12,18,.84)}
   "press_worker2": "images/press_worker2.png",
   "presses": "images/presses.png",
   "raw": "images/raw.jpeg",
-  "shaping": "images/shaping.png",
+  "shaping": "images/special_shape.jpeg",
   "sleeves": "images/sleeves.png",
   "yard": "images/yard.png"
 };
